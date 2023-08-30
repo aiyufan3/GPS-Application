@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edu.msu.hegazyba.testproject.SquareFrameLayout
+     layout_height="wrap_content"
+     layout_width="wrap_content">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_name"
+            android:text="#2 VISIT THE BROAD ART MUSEUM"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/spartan_green"
+            android:textSize="15sp"
+            android:fontFamily="@font/gotham_bold"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            app:shapeAppearanceOverlay="@style/GridImageView.Corner"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/grid_image"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="75dp"/>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</edu.msu.hegazyba.testproject.SquareFrameLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Spartan Bucket-List</string>
+    <string name="onboarding_login">Spartan \nBucket-List</string>
+    <string name="LoginLabel">Login</string>
+    <string name="SignUpLabel">Sign Up</string>
+    <string name="LogoutLabel">Logout</string>
+    <string name="onboarding_signup">Hello There</string>
+    <string name="passwordEditTextLabel">Password</string>
+    <string name="usernameEditTextLabel">Username</string>
+    <string name="bucket_grid_view"></string>
+</resources>

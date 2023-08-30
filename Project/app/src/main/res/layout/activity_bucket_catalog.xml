@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BucketCatalogActivity"
+    android:orientation="vertical"
+    android:background="@color/spartan_green">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/msu_backdrop"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/ImageView.Corner"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="@string/onboarding_login"
+            android:textColor="@color/white"
+            android:textSize="46sp"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="3"
+            android:shadowRadius="5"/>
+        <Button
+            android:id="@+id/button_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/gotham_bold"
+            android:onClick="onLogout"
+            android:text="@string/LogoutLabel"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </androidx.cardview.widget.CardView>
+    <GridView
+        android:id="@+id/bucket_grid_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="15dp"
+        android:horizontalSpacing="15dp"
+        android:paddingHorizontal="30dp"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_gravity="bottom"
+        android:paddingTop="245dp"
+        android:requiresFadingEdge="vertical"
+        android:fadingEdgeLength="10dp"/>
+
+
+
+</RelativeLayout>
